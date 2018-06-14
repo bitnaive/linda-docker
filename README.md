@@ -20,5 +20,6 @@ docker run -d --rm --name lindad -p 33820:33820 -v node:/root/.Linda linda
 ## Lindad commands 
 
 ```bash
+docker exec -it lindad /root/Lindad help
 docker exec -it lindad /root/Lindad getinfo
 ```

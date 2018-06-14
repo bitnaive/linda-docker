@@ -1,5 +1,5 @@
 # Creates a Linda Coin hot wallet 
-This container runs Lindad deamon the purpose of hot/cold wallet masternode setup. These instructions assume you have a fully synced and running Linda wallet on your local computer.  
+This container runs Lindad deamon for the purpose of hot/cold wallet masternode setup. These instructions assume you have a fully synced and running Linda wallet on your local computer.  
 
 ## Dependencies 
 * Ubuntu 16.04 [VPS](https://www.vultr.com/?ref=7263002)
@@ -26,8 +26,8 @@ Clone this repository to your [VPS](https://www.vultr.com/?ref=7263002) server
 git clone https://github.com/bitnaive/linda-docker
 ```
 Edit the ``Linda.conf`` and change
-- rpcuser
-- rpcpassword
+- rpcuser=
+- rpcpassword=
 - masternodeprivkey=\<genkey\>
 
 ```bash
@@ -43,8 +43,8 @@ docker run -d --rm --name lindad -p 33820:33820 -p 33821:33821 -v node:/root/.Li
 ## Lindad commands 
 
 ```bash
-docker exec -it lindad /root/Lindad help
-docker exec -it lindad /root/Lindad getinfo
+docker exec -it lindad /Lindad help
+docker exec -it lindad /Lindad getinfo
 ```
 
 ## Finishing Up
@@ -57,6 +57,6 @@ masternode start-many
 
 ### On your VPS server
 ```bash
-docker exec -it lindad /root/Lindad masternode start
+docker exec -it lindad /Lindad masternode start
 ```
 

@@ -19,4 +19,6 @@ RUN chmod +x /root/Lindad
 
 EXPOSE 33820
 
-CMD ["/root/Lindad"]
+RUN /root/Lindad -daemon
+
+CMD ["tail", "-f", "/root/.Linda/debug.log"]

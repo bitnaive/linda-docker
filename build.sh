@@ -8,4 +8,6 @@ unzip bootstrap.zip
 
 rm -rf bootstap.zip
 
+cd ../
+
 docker build -t linda .

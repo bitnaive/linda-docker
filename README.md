@@ -25,7 +25,7 @@ Clone this repository to your [VPS](https://www.vultr.com/?ref=7263002) server
 ```bash
 git clone https://github.com/bitnaive/linda-docker
 ```
-Edit the ``node/Linda.conf`` and change
+Edit the ``Linda.conf`` and change
 - rpcuser
 - rpcpassword
 - masternodeprivkey=\<genkey\>

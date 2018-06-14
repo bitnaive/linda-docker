@@ -5,19 +5,16 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl
 
-RUN mkdir /root/.Linda
-
-WORKDIR /root/.Linda
-
-ADD Linda.conf /root/
+WORKDIR /
+ADD Linda.conf /
 
 RUN wget https://github.com/Lindacoin/Linda/releases/download/2.0.0.1/Unix.Lindad.v2.0.0.1g.tar.gz
 
-RUN tar -xvf Unix.Lindad.v2.0.0.1g.tar.gz  -C /root
+RUN tar -xvf Unix.Lindad.v2.0.0.1g.tar.gz  -C /
 
 RUN rm Unix.Lindad.v2.0.0.1g.tar.gz
 
-RUN chmod +x /root/Lindad
+RUN chmod +x /Lindad
 
 EXPOSE 33820
 EXPOSE 33821

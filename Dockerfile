@@ -18,7 +18,10 @@ RUN rm Unix.Lindad.v2.0.0.1g.tar.gz
 RUN chmod +x /root/Lindad
 
 EXPOSE 33820
+EXPOSE 33821
 
 RUN /root/Lindad -daemon
+
+RUN sleep 30
 
 CMD ["tail", "-f", "/root/.Linda/debug.log"]

@@ -21,7 +21,7 @@ MN1 <VPS IP ADDRESS>:33820 <genkey> <outputs> 1
 - make sure port 33820 is open on your VPS firewall
 
 ## Building  
-Clone this repository
+Clone this repository to your [VPS](https://www.vultr.com/?ref=7263002) server
 ```bash
 git clone https://github.com/bitnaive/linda-docker
 ```
@@ -46,3 +46,17 @@ docker run -d --rm --name lindad -p 33820:33820 -p 33821:33821 -v node:/root/.Li
 docker exec -it lindad /root/Lindad help
 docker exec -it lindad /root/Lindad getinfo
 ```
+
+## Finishing Up
+### On your desktop
+- Restart you cold wallet
+- In debug console type
+```bash
+masternode start-many
+```
+
+### On your VPS server
+```bash
+docker exec -it lindad /root/Lindad masternode start
+```
+

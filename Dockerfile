@@ -9,6 +9,8 @@ RUN mkdir /root/.Linda
 
 WORKDIR /root/.Linda
 
+ADD node/Linda.conf /root/.Linda/Linda.conf
+
 RUN wget https://github.com/Lindacoin/Linda/releases/download/2.0.0.1/Unix.Lindad.v2.0.0.1g.tar.gz
 
 RUN tar -xvf Unix.Lindad.v2.0.0.1g.tar.gz  -C /root

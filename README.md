@@ -13,7 +13,7 @@ This container runs Lindad deamon the purpose of hot/cold wallet masternode setu
 
 ## Docker Command 
 ```bash
-docker run --name lindad -p 33821:33820 -v node:/root/.Linda linda
+docker run -d --rm --name lindad -p 33820:33820 -v node:/root/.Linda linda
 
 ```
 

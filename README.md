@@ -1,7 +1,10 @@
 # Creates a Linda Coin hot wallet 
+This container runs Lindad deamon the purpose of hot/cold wallet masternode setup 
 
 ## Dependencies 
-* Docker
+* unzip (sudo apt-get install unzip)
+* git (sudo apt-get install git)
+* Docker (https://github.com/docker/docker-install)
 
 ## Building  
 ```bash

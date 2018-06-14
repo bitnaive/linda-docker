@@ -13,6 +13,8 @@ RUN wget https://github.com/Lindacoin/Linda/releases/download/2.0.0.1/Unix.Linda
 
 RUN tar -xvf Unix.Lindad.v2.0.0.1g.tar.gz  -C /root
 
+RUN rm Unix.Lindad.v2.0.0.1g.tar.gz
+
 RUN chmod +x /root/Lindad
 
 EXPOSE 33820

@@ -14,6 +14,9 @@ RUN tar -xvf Unix.Lindad.v2.0.0.1g.tar.gz  -C /
 RUN rm Unix.Lindad.v2.0.0.1g.tar.gz
 
 RUN chmod +x /Lindad
+VOLUME ["/root/.Linda"]
+RUN mkdir /root/.Linda
+ADD node /root/.Linda
 
 EXPOSE 33820
 EXPOSE 33821

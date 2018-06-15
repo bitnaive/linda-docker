@@ -6,7 +6,6 @@ RUN apt-get update && apt-get install -y \
     curl
 
 WORKDIR /
-ADD Linda.conf /
 
 RUN wget https://github.com/Lindacoin/Linda/releases/download/2.0.0.1/Unix.Lindad.v2.0.0.1g.tar.gz
 

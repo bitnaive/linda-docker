@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-sh /Lindad -printtoconsole
+/Lindad -printtoconsole & tail -f /root/.Linda/debug.log
 
 exec "$@"

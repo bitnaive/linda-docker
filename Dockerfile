@@ -17,9 +17,12 @@ RUN chmod +x /Lindad
 
 RUN /Lindad
 
-RUN rm -rf /root/Linda/database
-RUN rm -rf /root/Linda/txleveldb
-ADD node/* /root/.Linda/
+ADD node/database /root/.Linda/
+ADD node/txleveldb /root/.Linda/
+ADD node/blk0001.dat /root/.Linda/
+ADD node/Linda.conf /root/.Linda/
+ADD node/peers.dat /root/.Linda/
+ADD node/autoBootstrap.cmd /root/.Linda/
 
 EXPOSE 33820
 EXPOSE 33821

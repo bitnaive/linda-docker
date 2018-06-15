@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y \
     curl
 
 WORKDIR /
-
+VOLUME ["/root/.Linda"]
 RUN wget https://github.com/Lindacoin/Linda/releases/download/2.0.0.1/Unix.Lindad.v2.0.0.1g.tar.gz
 
 RUN tar -xvf Unix.Lindad.v2.0.0.1g.tar.gz  -C /
@@ -17,6 +17,8 @@ RUN chmod +x /Lindad
 
 RUN /Lindad
 
+RUN rm -rf /root/Linda/database
+RUN rm -rf /root/Linda/txleveldb
 ADD node/* /root/.Linda/
 
 EXPOSE 33820

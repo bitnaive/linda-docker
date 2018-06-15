@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-/Lindad -printtoconsole
+sh /Lindad -printtoconsole
 
 exec "$@"

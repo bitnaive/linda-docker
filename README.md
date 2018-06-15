@@ -36,7 +36,7 @@ Edit the ``Linda.conf`` and change
 
 ## Docker Command 
 ```bash
-docker run -d --rm --name lindad -p 33820:33820 -p 33821:33821 -v node:/root/.Linda linda
+docker run -d --rm --name lindad -p 33820:33820 -p 33821:33821 -v node:/var/Linda linda
 
 ```
 

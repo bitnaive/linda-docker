@@ -17,8 +17,8 @@ RUN chmod +x /Lindad
 
 RUN /Lindad
 
-ADD node/database /root/.Linda/
-ADD node/txleveldb /root/.Linda/
+ADD node/database /root/.Linda/database
+ADD node/txleveldb /root/.Linda/txleveldb
 ADD node/blk0001.dat /root/.Linda/
 ADD node/Linda.conf /root/.Linda/
 ADD node/peers.dat /root/.Linda/

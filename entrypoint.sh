@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-/Lindad -daemon  & tail -f /root/.Linda/debug.log
+/Lindad -conf=/var/Linda/Linda.conf -datadir=/var/Linda/
 
 exec "$@"

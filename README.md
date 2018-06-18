@@ -25,11 +25,12 @@ Clone this repository to your [VPS](https://www.vultr.com/?ref=7263002) server
 ```bash
 git clone https://github.com/bitnaive/linda-docker
 ```
-Edit the ``Linda.conf`` and change
+Edit the ``node/Linda.conf`` and change
 - rpcuser=
 - rpcpassword=
 - masternodeprivkey=\<genkey\>
 
+Run the following command:=
 ```bash
 ./build.sh
 ```
@@ -49,13 +50,14 @@ docker exec -it lindad /Lindad getinfo
 
 ## Finishing Up
 ### On your desktop
-- Restart you cold wallet
+- Restart your cold wallet
 - In debug console type
 ```bash
 masternode start-many
 ```
 
 ### On your VPS server
+After waiting for your wallet to sync run
 ```bash
 docker exec -it lindad /Lindad masternode start
 ```

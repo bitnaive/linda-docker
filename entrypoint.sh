@@ -6,6 +6,6 @@ echo "\n port=$PORT" >> /root/.Linda/Linda.conf
 echo "\n rpcuser=$RPCUSER" >> /root/.Linda/Linda.conf
 echo "\n rpcpassword=$RPCPASSWORD">> /root/.Linda/Linda.conf
 
-/Lindad -printtoconsole & tail -f /dev/nulld
+/Lindad -printtoconsole & tail -f /dev/null
 
 exec "$@"

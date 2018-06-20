@@ -10,4 +10,4 @@ rm -rf bootstap.zip
 
 cd ../
 
-docker build -t linda .
+docker-compose build

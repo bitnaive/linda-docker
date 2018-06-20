@@ -5,6 +5,7 @@ services:
         image: linda
         ports:
           - 33820:33820
+        container_name: masternode1
         environment:
           MASTERNODEPRIVKEY1: $MASTERNODEPRIVKEY1
           PORT: $PORT1
@@ -15,6 +16,7 @@ services:
 #        image: linda
 #        ports:
 #          - 33820:33820
+#        container_name: masternode2
 #        environment:
 #          MASTERNODEPRIVKEY: $MASTERNODEPRIVKEY2
 #          PORT: $PORT2
@@ -26,6 +28,7 @@ services:
 #        image: linda
 #        ports:
 #          - 33820:33820
+#        container_name: masternode3
 #        environment:
 #          MASTERNODEPRIVKEY: $MASTERNODEPRIVKEY3
 #          PORT: $PORT3

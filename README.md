@@ -38,7 +38,7 @@ Run the following command:=
 
 ## Docker Command 
 ```bash
-docker run -d --rm --name lindad -p 33820:33820 -p 33821:33821 linda
+docker-compose up -d
 
 ```
 

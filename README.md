@@ -45,8 +45,8 @@ docker-compose up -d
 ## Lindad commands 
 
 ```bash
-docker exec -it lindad /Lindad help
-docker exec -it lindad /Lindad getinfo
+docker exec -it masternode1 /Lindad help
+docker exec -it masternode1 /Lindad getinfo
 ```
 
 ## Finishing Up
@@ -60,7 +60,7 @@ masternode start-many
 ### On your VPS server
 After waiting for your wallet to sync run
 ```bash
-docker exec -it lindad /Lindad masternode start
+docker exec -it masternode1 /Lindad masternode start
 ```
 
 

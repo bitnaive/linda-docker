@@ -7,7 +7,7 @@ services:
           - 33820:33820
         container_name: masternode1
         environment:
-          MASTERNODEPRIVKEY1: $MASTERNODEPRIVKEY1
+          MASTERNODEPRIVKEY: $MASTERNODEPRIVKEY1
           PORT: $PORT1
           RPCUSER: $RPCUSER
           RPCPASSWORD: $RPCPASSWORD

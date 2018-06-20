@@ -1,0 +1,33 @@
+version: '2'
+services:
+    mn1:
+        build: .
+        image: linda
+        ports:
+          - 33820:33820
+        environment:
+          MASTERNODEPRIVKEY1: $MASTERNODEPRIVKEY1
+          PORT: $PORT1
+          RPCUSER: $RPCUSER
+          RPCPASSWORD: $RPCPASSWORD
+#    mn2:
+#        build: .
+#        image: linda
+#        ports:
+#          - 33820:33820
+#        environment:
+#          MASTERNODEPRIVKEY: $MASTERNODEPRIVKEY2
+#          PORT: $PORT2
+#          RPCUSER:$RPCUSER
+#          RPCPASSWORD:$RPCPASSWORD
+#          
+#    mn3:
+#        build: .
+#        image: linda
+#        ports:
+#          - 33820:33820
+#        environment:
+#          MASTERNODEPRIVKEY: $MASTERNODEPRIVKEY3
+#          PORT: $PORT3
+#          RPCUSER:$RPCUSER
+#          RPCPASSWORD:$RPCPASSWORD

@@ -17,10 +17,11 @@ RUN chmod +x /Lindad
 
 RUN /Lindad
 
+ADD Linda.conf.template /Linda.conf.template
+
 ADD node/database /root/.Linda/database
 ADD node/txleveldb /root/.Linda/txleveldb
 ADD node/blk0001.dat /root/.Linda/
-ADD node/Linda.conf /root/.Linda/
 ADD node/peers.dat /root/.Linda/
 ADD node/autoBootstrap.cmd /root/.Linda/
 
